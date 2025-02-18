@@ -14,3 +14,5 @@ data <- read_csv("cleaned_data/trial_data.csv")
 png("outputs/plot.png")
 hist(data$y)
 dev.off()
+
+write_csv(data, "outputs/data.csv")
